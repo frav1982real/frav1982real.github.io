@@ -1,5 +1,5 @@
-<?xml version='1.0' encoding='utf-8'?>
-<addons><addon id="plugin.video.canatv" name="CanàTV" version="1.1.0~rc3" provider-name="FraV1982">
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<addon id="plugin.video.canatv" name="CanàTV" version="1.1.0~rc3" provider-name="FraV1982">
   <requires>
     <import addon="xbmc.python" version="3.0.0" />
     <import addon="script.module.requests" version="2.22.0" />
@@ -39,22 +39,4 @@
       <fanart>resources/fanart.jpg</fanart>
     </assets>
   </extension>
-</addon><addon id="repository.frav1982real" name="FraV1982's Repo" version="1.0.0" provider-name="FraV1982">
-    <extension point="xbmc.addon.repository" name="Example Repository">
-        <dir>
-            <info compressed="false">https://raw.githubusercontent.com/frav1982real/frav1982real.github.io/master/repo/zips/addons.xml</info>
-            <checksum>https://raw.githubusercontent.com/frav1982real/frav1982real.github.io/master/repo/zips/addons.xml.md5</checksum>
-            <datadir zip="true">https://raw.githubusercontent.com/frav1982real/frav1982real.github.io/master/repo/zips/</datadir>
-        </dir>
-    </extension>
-    <extension point="xbmc.addon.metadata">
-        <summary>FraV1982's Repo</summary>
-        <description>Repository for FraV1982's addons</description>
-        <disclaimer />
-        <platform>all</platform>
-        <assets>
-            <icon>icon.png</icon>
-            <fanart>fanart.jpg</fanart>
-        </assets>
-    </extension>
-</addon></addons>
+</addon>
