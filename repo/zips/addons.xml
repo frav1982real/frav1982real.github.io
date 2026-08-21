@@ -1,5 +1,22 @@
 <?xml version='1.0' encoding='utf-8'?>
-<addons><addon id="repository.frav1982real" name="FraV1982's Repo" version="1.0.0" provider-name="FraV1982">
+<addons><addon id="plugin.video.canatv.plus" name="CanàTV Plus" version="0.2.0" provider-name="FraV1982">
+
+  <requires>
+    <import addon="xbmc.python" version="3.0.0" />
+    <import addon="script.module.routing" version="0.2.0" />
+  </requires>
+
+  <extension point="xbmc.python.pluginsource" library="default.py">
+    <provides>video</provides>
+  </extension>
+
+  <extension point="xbmc.addon.metadata">
+    <platform>all</platform>
+    <summary lang="it_IT">Fondamenta: PVR + PPV + canali free (LCN dal JSON)</summary>
+    <description lang="it_IT">Genera la playlist per il PVR IPTV Simple Client rispettando gli LCN del JSON. I canali free usano link esistenti, i PPV vengono risolti al momento del click.</description>
+    <license>GPL-3.0-or-later</license>
+  </extension>
+</addon><addon id="repository.frav1982real" name="FraV1982's Repo" version="1.0.0" provider-name="FraV1982">
     <extension point="xbmc.addon.repository" name="Example Repository">
         <dir>
             <info compressed="false">https://raw.githubusercontent.com/frav1982real/frav1982real.github.io/master/repo/zips/addons.xml</info>

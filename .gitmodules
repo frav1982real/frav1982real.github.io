@@ -1,0 +1,3 @@
+[submodule "repo/plugin.video.canatv.plus"]
+	path = repo/plugin.video.canatv.plus
+	url = https://github.com/frav1982real/plugin.video.canatv.plus.git
