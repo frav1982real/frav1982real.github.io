@@ -1,13 +1,15 @@
 <?xml version="1.0" encoding="UTF-8" standalone="yes"?>
 <addon id="plugin.video.canatv.plus"
        name="CanàTV Plus"
-       version="0.3.1~alpha"
+       version="0.5.0~alpha"
        provider-name="FraV1982">
 
   <requires>
     <import addon="xbmc.python" version="3.0.1"/>
     <import addon="script.module.routing" version="0.2.0"/>
     <import addon="script.module.requests" version="2.31.0"/>
+    <!-- usato solo dai PPV con ClearKey; preinstallato in Omega -->
+    <import addon="inputstream.adaptive" version="20.3.0" optional="true"/>
   </requires>
 
   <extension point="xbmc.python.pluginsource" library="default.py">
@@ -19,8 +21,8 @@
       <icon>resources/icon.png</icon>
     </assets>
     <platform>all</platform>
-    <summary lang="it_IT">Fondamenta: PVR + PPV + canali free (LCN dal JSON)</summary>
-    <description lang="it_IT">Genera la playlist per il PVR IPTV Simple Client rispettando gli LCN del JSON. I canali free usano link esistenti, i PPV vengono risolti al momento del click.</description>
+    <summary lang="it_IT">PVR + canali free (stile World Live TV) + PPV</summary>
+    <description lang="it_IT">Genera la playlist per il PVR IPTV Simple Client rispettando gli LCN di canali.json. Tutti i canali puntano all'addon via plugin://: i free vengono risolti al momento (link statico, poi resolver Rai dinamico stile World Live TV, infine fallback Vavoo), i PPV con il loro endpoint dedicato.</description>
     <license>GPL-3.0-or-later</license>
   </extension>
 </addon>
