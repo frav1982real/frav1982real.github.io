@@ -1,12 +1,13 @@
 <?xml version="1.0" encoding="UTF-8" standalone="yes"?>
 <addon id="plugin.video.canatv.plus"
        name="CanàTV Plus"
-       version="0.3.0~alpha"
+       version="0.3.1~alpha"
        provider-name="FraV1982">
 
   <requires>
     <import addon="xbmc.python" version="3.0.1"/>
     <import addon="script.module.routing" version="0.2.0"/>
+    <import addon="script.module.requests" version="2.31.0"/>
   </requires>
 
   <extension point="xbmc.python.pluginsource" library="default.py">
@@ -14,6 +15,9 @@
   </extension>
 
   <extension point="xbmc.addon.metadata">
+    <assets>
+      <icon>resources/icon.png</icon>
+    </assets>
     <platform>all</platform>
     <summary lang="it_IT">Fondamenta: PVR + PPV + canali free (LCN dal JSON)</summary>
     <description lang="it_IT">Genera la playlist per il PVR IPTV Simple Client rispettando gli LCN del JSON. I canali free usano link esistenti, i PPV vengono risolti al momento del click.</description>
